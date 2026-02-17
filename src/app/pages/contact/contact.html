@@ -1,0 +1,66 @@
+<section class="contact-page">
+
+  <h2>Contact Us</h2>
+  <p class="subtitle">
+    Looking for a trusted office supply partner? Get in touch with us.
+  </p>
+
+  <div class="contact-container">
+
+    <!-- Left Side: Contact Info -->
+    <div class="contact-info">
+      <h3>Company Details</h3>
+
+      <p><strong>Company:</strong> Unity Office Supply Private Limited</p>
+      <p><strong>Service Type:</strong> Corporate / IT Office Supplies</p>
+      <p><strong>Delivery Time:</strong> 3–4 Working Days</p>
+      <p><strong>Credit Period:</strong> 15–30 Days</p>
+
+      <p><strong>Business Development:</strong> Vedraj Koli</p>
+      <p><strong>Phone:</strong> 9307582455</p>
+      <p><strong>Alternate Phone:</strong> 8087565104</p>
+      <p><strong>Email:</strong> Unitysupply.in@gmail.com</p>
+      <p><strong>Location:</strong> Jaysingpur, Maharashtra</p>
+    </div>
+
+    <!-- Right Side: Form -->
+    <div class="contact-form">
+      <h3>Send Inquiry</h3>
+
+      <form (ngSubmit)="sendEnquiry()" #contactForm="ngForm">
+
+        <input type="text" name="name" [(ngModel)]="name" placeholder="Your Name" required>
+        <input type="text" name="company" [(ngModel)]="company" placeholder="Company Name" required>
+        <input type="email" name="email" [(ngModel)]="email" placeholder="Email Address" required>
+        <input type="tel" name="phone" [(ngModel)]="phone" placeholder="Phone Number" required>
+
+        <textarea
+          rows="4"
+          name="message"
+          [(ngModel)]="message"
+          placeholder="Your Message"
+          required>
+        </textarea>
+
+        <button type="submit">Submit</button>
+
+      </form>
+    </div>
+
+  </div> <!-- END contact-container -->
+
+
+  <!-- FULL WIDTH MAP (OUTSIDE GRID) -->
+   
+  
+  <div class="map-section">
+    <h3>📍Our Location</h3>
+    <iframe 
+      src="https://www.google.com/maps?q=Jaysingpur%20Maharashtra&output=embed"
+      loading="lazy"
+      allowfullscreen>
+    </iframe>
+  </div>
+ 
+
+</section>

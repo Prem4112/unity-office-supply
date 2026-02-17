@@ -1,0 +1,85 @@
+.footer {
+   background: linear-gradient(135deg, #0a1f44, #102a5c);
+  color: #ffffff;
+  padding: 70px 20px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  gap: 50px;
+}
+
+.footer-company h3 {
+  font-size: 26px;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.footer-company p {
+  max-width: 300px;
+  opacity: 0.85;
+  line-height: 1.6;
+}
+
+/* Social Icons */
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 12px;
+  font-size: 18px;
+  background: rgba(255,255,255,0.1);
+  padding: 10px 14px;
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+  background: #00b4ff;
+  transform: translateY(-4px);
+}
+
+/* Links */
+.footer-links h4,
+.footer-contact h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.footer-links a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  margin-bottom: 8px;
+  opacity: 0.85;
+  transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #25d366;
+  padding-left: 6px;
+}
+
+/* Contact */
+.footer-contact p {
+  margin-bottom: 8px;
+  opacity: 0.85;
+}
+
+/* Bottom */
+.footer-bottom {
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  font-size: 14px;
+  opacity: 0.7;
+}
