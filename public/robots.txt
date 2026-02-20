@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://unity-office-supply.netlify.app/sitemap.xml
