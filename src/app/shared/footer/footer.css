@@ -83,3 +83,49 @@
   font-size: 14px;
   opacity: 0.7;
 }
+.footer-rating {
+  text-align: left;
+}
+
+.footer-rating .stars span {
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: #ccc;
+  transition: 0.2s;
+}
+
+.footer-rating .stars span.filled {
+  color: gold;
+}
+
+.footer-rating button {
+  margin-top: 8px;
+  padding: 6px 15px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: #00b4ff;
+  color: white;
+  transition: 0.3s;
+}
+
+.footer-rating button:hover {
+  background-color: #25d366;
+}
+
+.footer-rating p {
+  margin-top: 6px;
+  font-size: 0.85rem;
+  color: #25d366;
+}
+
+/* Bottom */
+.footer-bottom {
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  font-size: 14px;
+  opacity: 0.7;
+}

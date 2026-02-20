@@ -19,56 +19,56 @@ export class Services {
       name: 'Housekeeping Supplies',
       image: 'pantry/housekeeping.jpg',
       description: 'Floor cleaners, phenyl, hand wash, mops, brooms, dusters, garbage bags.',
-      delivery: '3–4 Working Days',
+      delivery: '2–3 Working Days',
       credit: '15–30 Days'
     },
     {
       name: 'Pantry Supplies',
       image: 'pantry/pantry.jpg',
       description: 'Tea, coffee, sugar, biscuits, snacks, drinking water, disposable cups.',
-      delivery: '3–4 Working Days',
+      delivery: '2–3 Working Days',
       credit: '15–30 Days'
     },
     {
       name: 'Office Stationery',
       image: 'pantry/office.jpg',
       description: 'Paper, files, pens, markers, printer & copier supplies, desk essentials.',
-      delivery: '3–4 Working Days',
+      delivery: '2–3 Working Days',
       credit: '15–30 Days'
     },
     {
       name: 'Workspace & Corporate Supplies',
       image: 'pantry/workspace.jpg',
       description: 'Office utility products, common area supplies, corporate gifting, bulk orders.',
-      delivery: '3–4 Working Days',
+      delivery: '2–3 Working Days',
       credit: '15–30 Days'
     },
     {
   name: 'Safety Equipment',
   image: 'pantry/safe1.jpg',
   description: 'Industrial safety gear, PPE kits, helmets, gloves, masks and workplace protection essentials.',
-  delivery: '3–5 Working Days',
+  delivery: '2–3 Working Days',
   credit: '15–30 Days'
 },
 {
   name: 'Packaging Materials',
   image: 'pantry/pack1.jpg',
   description: 'Boxes, tapes, bubble wraps, stretch films and protective packaging solutions for businesses.',
-  delivery: '2–4 Working Days',
+  delivery: '2–3 Working Days',
   credit: '15–30 Days'
 },
 {
   name: 'Plastic Products',
   image: 'pantry/plastic1.jpg',
   description: 'Plastic bins, storage containers, crates, dustbins and multipurpose utility items.',
-  delivery: '3–5 Working Days',
+  delivery: '2–3 Working Days',
   credit: '15–30 Days'
 },
 {
   name: 'Glass Products',
   image: 'pantry/glass1.jpg',
   description: 'Glass bottles, jars, tumblers and pantry utility glassware for office and industrial use.',
-  delivery: '3–4 Working Days',
+  delivery: '2–3 Working Days',
   credit: '15–30 Days'
 }
 
