@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, RouterModule } from '@angular/router';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-category',
@@ -9,15 +10,84 @@ import { ActivatedRoute, RouterModule } from '@angular/router';
   styleUrls: ['./category.css'],
   standalone: true
 })
-export class CategoryComponent {
+export class CategoryComponent implements OnInit {
 
   categoryType: string = '';
-
   products: any[] = [];
 
-  constructor(private route: ActivatedRoute) {
+  constructor(private route: ActivatedRoute, private meta: Meta, private titleService: Title) {}
+
+  ngOnInit(): void {
     this.categoryType = this.route.snapshot.params['type'];
     this.loadProducts();
+    this.setSEO();
+  }
+
+  // Dynamic SEO based on category
+  setSEO() {
+    let title = '';
+    let description = '';
+    let keywords = '';
+    let url = `https://unityofficesupply.com/category/${this.categoryType}`;
+
+    switch (this.categoryType) {
+      case 'housekeeping':
+        title = 'Housekeeping Supplies - Unity Office Supply';
+        description = 'Buy premium housekeeping supplies like cleaners, mops, brooms, hand wash, garbage bags, and more at Unity Office Supply.';
+        keywords = 'housekeeping supplies, cleaners, mops, brooms, hand wash, Unity Office Supply';
+        break;
+      case 'pantry':
+        title = 'Pantry Supplies - Unity Office Supply';
+        description = 'Order pantry supplies including tea, coffee, biscuits, snacks, and disposable cups from Unity Office Supply.';
+        keywords = 'pantry supplies, tea, coffee, snacks, disposable cups, Unity Office Supply';
+        break;
+      case 'stationery':
+        title = 'Office Stationery - Unity Office Supply';
+        description = 'Explore a wide range of office stationery like pens, papers, files, markers, ink & toner cartridges at Unity Office Supply.';
+        keywords = 'office stationery, pens, papers, files, markers, ink cartridges, Unity Office Supply';
+        break;
+      case 'workspace':
+        title = 'Workspace & Corporate Supplies - Unity Office Supply';
+        description = 'Get workspace and corporate supplies including office electronics, storage, furniture, and corporate gifts at Unity Office Supply.';
+        keywords = 'workspace supplies, corporate supplies, office electronics, Unity Office Supply';
+        break;
+      case 'safety':
+        title = 'Safety Equipment - Unity Office Supply';
+        description = 'Buy safety equipment like helmets, gloves, safety shoes, PPE kits, and protective gear from Unity Office Supply.';
+        keywords = 'safety equipment, helmets, gloves, PPE kits, Unity Office Supply';
+        break;
+      case 'packaging':
+        title = 'Packaging Materials - Unity Office Supply';
+        description = 'Order packaging materials like boxes, tapes, bubble wraps, and protective packaging solutions from Unity Office Supply.';
+        keywords = 'packaging materials, boxes, tapes, bubble wrap, Unity Office Supply';
+        break;
+      case 'plastic':
+        title = 'Plastic Products - Unity Office Supply';
+        description = 'Shop plastic products including bins, containers, bottles, and trays from Unity Office Supply.';
+        keywords = 'plastic products, bins, containers, trays, Unity Office Supply';
+        break;
+      case 'glass':
+        title = 'Glass Products - Unity Office Supply';
+        description = 'Buy glass products like glasses, bowls, plates, jars, and containers at Unity Office Supply.';
+        keywords = 'glass products, glasses, bowls, plates, jars, Unity Office Supply';
+        break;
+      default:
+        title = 'Category - Unity Office Supply';
+        description = 'Explore office supplies and products in various categories at Unity Office Supply.';
+        keywords = 'office supplies, Unity Office Supply, categories';
+    }
+
+    // Set Title and Meta Tags
+    this.titleService.setTitle(title);
+    this.meta.updateTag({ name: 'description', content: description });
+    this.meta.updateTag({ name: 'keywords', content: keywords });
+    this.meta.updateTag({ name: 'robots', content: 'index, follow' });
+
+    // Canonical URL
+    let link: HTMLLinkElement = document.querySelector("link[rel='canonical']") || document.createElement('link');
+    link.setAttribute('rel', 'canonical');
+    link.setAttribute('href', url);
+    document.head.appendChild(link);
   }
 
   loadProducts() {
@@ -318,17 +388,15 @@ export class CategoryComponent {
         { name: 'Coffe Maker', image: 'workspace/coffe maker.jpg' },
         { name: 'Vaccum Cleaner', image: 'workspace/cleaner.jpg' },
         { name: 'Catle', image: 'workspace/catle.jpg' },
-        { name: 'Storage Box', image: 'workspace/office box.jpg' },
+       
         { name: 'Emergency light', image: 'workspace/light.jpg' },
         { name: 'Tube light', image: 'workspace/tube light.jpg' },
         { name: 'Bulb', image: 'workspace/bulb.jpg' },
         { name: 'Buster', image: 'workspace/buster.jpg' },
         { name: 'Toaster', image: 'workspace/toaster.jpg' },
         { name: 'Tap', image: 'workspace/tap.jpg' },
-        { name: 'Automatic Hand Dryer', image: 'workspace/Automatic Hand Dryer.jpeg' },
-        { name: 'Aerosol Dispenser', image: 'workspace/Aerosol Dispenser.jpeg' },
-        { name: 'Tissue Dispenser', image: 'workspace/Tissue Dispenser.jpeg' },
-        { name: 'P. P. Bags', image: 'workspace/P. P. Bags.jpeg' },
+       
+       
 
       ];
     }
