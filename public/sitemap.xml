@@ -1,73 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Home Page -->
+  <!-- Home -->
   <url>
-    <loc>https://unityofficesupply.com/</loc>
-    <lastmod>2026-02-20</lastmod>
+    <loc>https://unity-office-supply.netlify.app/</loc>
+    <lastmod>2026-02-21</lastmod>
     <priority>1.0</priority>
   </url>
 
-  <!-- About Page -->
+  <!-- Main Pages -->
   <url>
-    <loc>https://unityofficesupply.com/about</loc>
-    <lastmod>2026-02-20</lastmod>
+    <loc>https://unity-office-supply.netlify.app/about</loc>
+    <lastmod>2026-02-21</lastmod>
     <priority>0.8</priority>
   </url>
 
-  <!-- Contact Page -->
   <url>
-    <loc>https://unityofficesupply.com/contact</loc>
-    <lastmod>2026-02-20</lastmod>
+    <loc>https://unity-office-supply.netlify.app/contact</loc>
+    <lastmod>2026-02-21</lastmod>
     <priority>0.8</priority>
   </url>
 
-  <!-- Services Page -->
   <url>
-    <loc>https://unityofficesupply.com/services</loc>
-    <lastmod>2026-02-20</lastmod>
+    <loc>https://unity-office-supply.netlify.app/services</loc>
+    <lastmod>2026-02-21</lastmod>
     <priority>0.8</priority>
   </url>
 
   <!-- Categories -->
   <url>
-    <loc>https://unityofficesupply.com/category/housekeeping</loc>
-    <lastmod>2026-02-20</lastmod>
+    <loc>https://unity-office-supply.netlify.app/category/housekeeping</loc>
     <priority>0.7</priority>
   </url>
+
   <url>
-    <loc>https://unityofficesupply.com/category/pantry</loc>
-    <lastmod>2026-02-20</lastmod>
+    <loc>https://unity-office-supply.netlify.app/category/pantry</loc>
     <priority>0.7</priority>
   </url>
+
   <url>
-    <loc>https://unityofficesupply.com/category/stationery</loc>
-    <lastmod>2026-02-20</lastmod>
+    <loc>https://unity-office-supply.netlify.app/category/stationery</loc>
     <priority>0.7</priority>
   </url>
+
   <url>
-    <loc>https://unityofficesupply.com/category/workspace</loc>
-    <lastmod>2026-02-20</lastmod>
+    <loc>https://unity-office-supply.netlify.app/category/workspace</loc>
     <priority>0.7</priority>
   </url>
+
   <url>
-    <loc>https://unityofficesupply.com/category/safety</loc>
-    <lastmod>2026-02-20</lastmod>
+    <loc>https://unity-office-supply.netlify.app/category/safety</loc>
     <priority>0.7</priority>
   </url>
+
   <url>
-    <loc>https://unityofficesupply.com/category/packaging</loc>
-    <lastmod>2026-02-20</lastmod>
+    <loc>https://unity-office-supply.netlify.app/category/packaging</loc>
     <priority>0.7</priority>
   </url>
+
   <url>
-    <loc>https://unityofficesupply.com/category/plastic</loc>
-    <lastmod>2026-02-20</lastmod>
+    <loc>https://unity-office-supply.netlify.app/category/plastic</loc>
     <priority>0.7</priority>
   </url>
+
   <url>
-    <loc>https://unityofficesupply.com/category/glass</loc>
-    <lastmod>2026-02-20</lastmod>
+    <loc>https://unity-office-supply.netlify.app/category/glass</loc>
     <priority>0.7</priority>
   </url>
 
